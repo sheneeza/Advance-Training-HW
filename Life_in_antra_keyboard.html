@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in Antra</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: #000d1a;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border: 1.5px solid #003366;
+            table-layout: fixed;
+            background: linear-gradient(to bottom, #001f3f, #003366);
+            color: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+        }
+        th, td {
+            border: 1.5px solid #003366;
+            padding: 10px;
+            font-size: 30px;
+            height: 90px;
+        }
+        th {
+            text-align: center;
+            font-size: 80px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .nested-table {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .nested-table td {
+            width: 100%;
+            height: 75%;
+            padding: 2px;
+            border: none;
+        }
+
+
+        .button {
+            display: flex;
+            width: auto;
+            height: 100%;
+            font-size: 30px;
+            padding: 20px;
+            color:aliceblue;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            border: 2px solid rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to bottom, rgba(173, 216, 230, 0.8), rgba(135, 206, 250, 0.9));
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease-in-out;
+        }
+        .button:hover {
+            background: linear-gradient(to bottom, rgba(100, 149, 237, 1), rgba(30, 144, 255, 1));
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+        }
+
+        .nested-table .button {
+            font-size: 20px; 
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        <a href="https://antra.com" target="_blank" class="button">Antra Life</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <a href="https://www.google.com" target="_blank" class="button">Google</a>
+                    </td>
+                    <td colspan="2">
+                        <a href="https://www.github.com" target="_blank" class="button">GitHub</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.facebook.com" target="_blank" class="button">Facebook</a>
+                    </td>
+                    <td>
+                        <a href="https://mail.google.com" target="_blank" class="button">GMail</a>
+                    </td>
+                    <td>
+                        <a href="https://www.glassdoor.com/Overview/Working-at-Antra-EI_IE959078.11,16.htm" target="_blank" class="button">Glassdoor</a>
+                    </td>
+                    <td>
+                        <a href="https://www.linkedin.com/company/antra-inc./posts/?feedView=all" target="_blank" class="button">LinkedIn</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.amazon.com" target="_blank" class="button">Amazon</a>
+                    </td>
+                    <td colspan="2">
+                        <a href="https://www.netflix.com" target="_blank" class="button">Netflix</a>
+                    </td>
+                    <td>
+                        <table class="nested-table">
+                            <tr>
+                                <td>
+                                    <a href="https://www.instagram.com" target="_blank" class="button">Instagram</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.spotify.com" target="_blank" class="button">Spotify</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a href="https://www.reddit.com" target="_blank" class="button">Reddit</a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com" target="_blank" class="button">YouTube</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
