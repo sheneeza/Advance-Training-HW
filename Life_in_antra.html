@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in Antra</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border: 1.5px solid black;
+        }
+        th, td {
+            border: 1.5px solid black;
+            padding: 10px;
+            font-size: 30px;
+            height: 150px;
+        }
+        th {
+            text-align: center;
+            padding: 20px;
+            font-size: 70px;
+        }
+        .upperCase {
+            text-transform: uppercase;
+        }
+        .large-col {
+            width: 50%;
+        }
+        .small-col {
+            width: 25%;
+        }
+
+        .xlargle-col {
+            width: 75%;
+        }
+
+        .align-left {
+            text-align: left;
+            vertical-align: center;
+        }
+
+        .align-left-top {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .align-left-bottom {
+            text-align: left;
+            vertical-align: bottom;
+        }
+
+        .align-right {
+            text-align: right;
+            vertical-align: center;
+        }
+
+        .align-right-top {
+            text-align: right;
+            vertical-align: top;
+        }
+
+        .align-right-bottom {
+            text-align: right;
+            vertical-align: bottom;
+        }
+
+        .align-center {
+            text-align: center;
+            vertical-align: top;
+        }
+        .align-bottom {
+            text-align: center;
+            vertical-align: bottom;
+        }
+        .nested-table {
+            width: 100%;
+            height: 100%;
+        }
+        .nested-table td {
+            text-align: center;
+            font-size: 25px;
+            height: 75px; 
+        }
+
+        .larger_text {
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Antra <span class="upperCase">Life</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" class="align-left-top large-col">Google</td>
+                    <td colspan="2" class="align-right-top large-col">GitHub</td>
+                </tr>
+                <tr>
+                    <td class="align-center small-col">FB</td>
+                    <td class="align-left small-col">GMail</td>
+                    <td class="align-bottom small-col">YouTube</td>
+                    <td class="align-left small-col">2048</td>
+                </tr>
+                <tr>
+                    <td class="align-right-bottom small-col">Food</td>
+                    <td colspan="2" class="align-left-bottom large-col">Game</td>
+                    <td>
+                        <table class="nested-table">
+                            <tr>
+                                <td>Social Life</td>
+                            </tr>
+                            <tr>
+                                <td>Sleep</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="align-right xlargle-col larger_text">Beer ></td>
+                    <td class="align-left small-col">WC</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
