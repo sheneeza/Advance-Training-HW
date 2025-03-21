@@ -23,7 +23,7 @@
         
         /* Column Styling */
         .news-column {
-            min-height: 200px;
+            min-height: 280px;
             background-color: white;
         }
         
@@ -38,6 +38,14 @@
             color: #0056b3;
             text-decoration: underline;
         }
+
+        .news-image1 {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+
     </style>
 </head>
 <body>
@@ -52,29 +60,125 @@
     <div class="container mt-4">
         <h3 style="color:rgb(41, 104, 221)">News</h3>
         <div class="row">
+            <!-- First News Article -->
             <div class="col-md-4">
-                <div class="border p-3 news-column">
-                    <article class="float-start">
-                        <a href="https://www.reuters.com/technology/nvidia-backed-coreweave-aims-raise-up-27-billion-us-ipo-2025-03-20/" class="article-link">Article 1: Latest Tech Trends</a>
+                <div class="border p-3 news-column h-100 d-flex flex-column">
+                    <article class="d-flex flex-column h-100">
+                        <h4 class="fw-bold">Daylight Savings 2025</h4>
+                
+                        <div class="d-flex justify-content-end">
+                            <p class="text-muted mb-1"><strong>03/10/2025</strong></p>
+                        </div>
+                
+                        <div class="d-flex justify-content-start">
+                            <p class="text-muted mb-3"><strong>Published by:</strong> Sarah Lynch Baldwin</p>
+                        </div>
+
+                        <div class="flex-grow-1 d-flex flex-column border-top border-bottom p-3">
+                            <a href="https://www.cbsnews.com/news/time-change-daylight-saving-spring-2025/" class="article-link">
+                                <img class="news-image1 mb-2" src="https://assets1.cbsnewsstatic.com/hub/i/r/2025/03/10/dedb5340-25dc-4fd7-adb4-76149989e5c0/thumbnail/1280x720/e495a84dd2e1776e18ed18f13dd6106e/19424d89aa3aa25e9e30a41a0523e203.jpg?v=9e5c48f1b04ac2a564e8a4c51250ac89" alt="Daylight Savings">
+                            </a>
+                            <p class="text-muted">Hawaii</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mt-auto p-3">
+                            <p class="text-muted mb-0 me-2"><strong>Tags:</strong></p>
+                            <p class="mb-0">In the spring, the clocks move forward one hour, meaning the sun sets an hour later.</p>
+                        </div>
+                    
                     </article>
                 </div>
             </div>
+            
+            <!-- Second News Article -->
             <div class="col-md-4">
-                <div class="border p-3 news-column">
-                    <article class="float-start">
-                        <a href="https://example.com/article2" class="article-link">Article 2: Business Insights</a>
+                <div class="border p-3 news-column h-100 d-flex flex-column">
+                    <article class="d-flex flex-column h-100">
+                        <h4 class="fw-bold">Trending Summer Vacation</h4>
+                
+                        <div class="d-flex justify-content-end">
+                            <p class="text-muted mb-1"><strong>03/05/2025</strong></p>
+                        </div>
+                
+                        <div class="d-flex justify-content-start">
+                            <p class="text-muted mb-3"><strong>Published by:</strong> Stacey Leasca</p>
+                        </div>
+
+                        <div class="flex-grow-1 d-flex flex-column border-top border-bottom p-3">
+                            <a href="https://www.travelandleisure.com/kaanapali-maui-hawaii-top-trending-summer-vacation-2025-8779790">
+                                <img class="news-image1 mb-2" src="https://www.travelandleisure.com/thmb/pMBIN0NDUR2EuuPnxxofKnDxdKw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-kaanapali-hawaii-KAANPALIHI0125-d5c2c33bbcd3436c99692e7ae5f8d5bf.jpg">
+                            </a>
+                            <p class="text-muted">Time changed on Sunday, March 9</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mt-auto p-3">
+                            <p class="text-muted mb-0 me-2"><strong>Tags:</strong></p>
+                            <p class="mb-0">In January, the home-sharing website named Hawaii the top-trending state in the U.S.</p>
+                        </div>
+                    
                     </article>
                 </div>
             </div>
+            
+            <!-- Third News Article -->
             <div class="col-md-4">
-                <div class="border p-3 news-column">
-                    <article class="float-start">
-                        <a href="https://example.com/article3" class="article-link">Article 3: Innovations in AI</a>
+                <div class="border p-3 news-column h-100 d-flex flex-column">
+                    <article class="d-flex flex-column h-100">
+                        <h4 class="fw-bold">AI-Generated Survey Responses</h4>
+                
+                        <div class="d-flex justify-content-end">
+                            <p class="text-muted mb-1"><strong>11/21/2024</strong></p>
+                        </div>
+                
+
+                        <div class="d-flex justify-content-start">
+                            <p class="text-muted mb-3"><strong>Published by:</strong> Stanford</p>
+                        </div>
+
+                        <div class="flex-grow-1 d-flex flex-column border-top border-bottom p-3">
+                            <a href="https://news.stanford.edu/stories/2024/11/ai-generated-survey-responses-could-make-research-less-accurate-lot-less-interesting/" class="article-link">
+                                <img class="news-image1 mb-2" src="https://news.stanford.edu/__data/assets/image/0022/162391/Janet20Xu20Use20of20GenAI20on20survey20sites20-20Key.jpg.webp">
+                            </a>
+                            <p class="text-muted">A third of online survey takers uses ChatGPT.</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mt-auto p-3">
+                            <p class="text-muted mb-0 me-2"><strong>Tags:</strong></p>
+                            <p>In a new paper, Simone Zhang of NYU, and AJ Alvero of CU examine why research participants turn to AI.</p>
+                        </div>
+                    
                     </article>
                 </div>
             </div>
+
         </div>
+
+         <!-- Pagination Section -->
+        <div class="d-flex justify-content-start mt-4">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
